@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>vinsaint studio — Work</title>
+  <meta name="description" content="Work — client photography and personal projects." />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <div class="transition"></div>
+  <div class="cursor"></div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html" data-go>
+        <div class="brand-mark">vs</div>
+        <div class="brand-name">vinsaint studio</div>
+      </a>
+
+      <button class="menu-btn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="../index.html" data-go>Home</a>
+        <a href="index.html" data-go>Work</a>
+        <a href="../socials.html" data-go>Socials</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="reveal">
+          <div class="kicker">Work</div>
+          <h1>client + personal</h1>
+          <p class="hero-lead">Choose a lane.</p>
+        </div>
+
+        <div class="tile-grid" style="margin-top:22px;">
+          <a class="tile reveal" href="client.html" data-go>
+            <div class="tile-bg"></div>
+            <div class="tile-content">
+              <div class="pill">Client</div>
+              <h3>people • events • landscapes</h3>
+              <p>Photography delivered for clients: portraits, coverage, and places.</p>
+              <span class="small-link" style="width:fit-content;">Enter →</span>
+            </div>
+          </a>
+
+          <a class="tile reveal" href="personal.html" data-go>
+            <div class="tile-bg"></div>
+            <div class="tile-content">
+              <div class="pill">Personal</div>
+              <h3>photo • design • video</h3>
+              <p>Experiments, concepts, and creative builds across mediums.</p>
+              <span class="small-link" style="width:fit-content;">Enter →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <span class="kicker">© <span id="y"></span> vinsaint studio</span>
+      <a href="../socials.html" data-go>Contact</a>
+    </div>
+  </footer>
+
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>

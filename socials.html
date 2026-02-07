@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>vinsaint studio — Socials</title>
+  <meta name="description" content="Social links and contact for vinsaint studio." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="transition"></div>
+  <div class="cursor"></div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" data-go>
+        <div class="brand-mark">vs</div>
+        <div class="brand-name">vinsaint studio</div>
+      </a>
+
+      <button class="menu-btn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html" data-go>Home</a>
+        <a href="work/index.html" data-go>Work</a>
+        <a href="socials.html" data-go>Socials</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="reveal">
+          <div class="kicker">Socials</div>
+          <h1>let’s talk.</h1>
+          <p class="hero-lead">Update the links below with your real handles.</p>
+        </div>
+
+        <div class="socials" style="margin-top:22px;">
+          <a class="social reveal" href="mailto:youremail@example.com">
+            <div class="icon">✉</div>
+            <div>
+              <strong>Email</strong>
+              <span>youremail@example.com</span>
+            </div>
+          </a>
+
+          <a class="social reveal" href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
+            <div class="icon">⌁</div>
+            <div>
+              <strong>Instagram</strong>
+              <span>@yourhandle</span>
+            </div>
+          </a>
+
+          <a class="social reveal" href="https://youtube.com/" target="_blank" rel="noopener noreferrer">
+            <div class="icon">▶</div>
+            <div>
+              <strong>YouTube</strong>
+              <span>Your channel</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <span class="kicker">© <span id="y"></span> vinsaint studio</span>
+      <a href="work/index.html" data-go>Work</a>
+    </div>
+  </footer>
+
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
