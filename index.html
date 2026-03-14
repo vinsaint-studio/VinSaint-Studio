@@ -1,82 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>VinSaint Studio</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="Assets/CSS/styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>vinsaint studio</title>
+  <meta name="description" content="VinSaint Studio — Creative Digital Studio" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-
 <body>
+  <div class="transition" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"></div>
 
-<header class="nav">
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" data-go>
+        <div class="brand-mark">VS</div>
+        <div class="brand-name">VinSaint Studio</div>
+      </a>
 
-<div class="nav-left">
-VinSaint
-</div>
+      <button class="menu-btn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
 
-<div class="nav-right">
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html" data-go>Home</a>
+        <a href="work/index.html" data-go>Work</a>
+        <a href="socials.html" data-go>Socials</a>
+      </nav>
+    </div>
+  </header>
 
-<a href="#">Home</a>
-<a href="#portfolio">Portfolio</a>
-<a href="#">Shop</a>
-<a href="socials.html">Contact</a>
+  <main>
+    <section class="section hero">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <div class="kicker">Photography • Graphic Design • Videography</div>
+          <h1>Concepts, realized.</h1>
+          <p class="hero-lead">
+            vinsaint studio is focused on client work (people, events, landscapes) and personal experiments across photo, design, and video.
+          </p>
 
-</div>
+          <div class="hero-actions">
+            <a class="btn primary" href="work/index.html" data-go>View Work</a>
+            <a class="btn" href="socials.html" data-go>Contact</a>
+          </div>
+        </div>
 
-</header>
+        <div class="hero-card reveal">
+          <div class="top"></div>
+          <div class="bottom">
+            <div class="meta-row">
+              <span>Based in: Winnipeg</span>
+              <span>© <span id="y"></span></span>
+            </div>
+            <div class="line"></div>
+            <div class="line short"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="section">
+      <div class="container">
+        <div class="split-head reveal">
+          <div>
+            <div class="kicker">Featured</div>
+            <h2>selected work</h2>
+          </div>
+          <a class="small-link" href="work/index.html" data-go>See all →</a>
+        </div>
 
-<section class="hero">
+        <div class="grid">
+          <article class="card reveal">
+            <div class="thumb"></div>
+            <div class="card-body">
+              <div class="card-title">
+                <strong>Portrait Session</strong>
+                <span class="tag">Client</span>
+              </div>
+              <p>People / portraits</p>
+            </div>
+          </article>
 
-<h1 id="title">VinSaint Studio</h1>
+          <article class="card reveal">
+            <div class="thumb"></div>
+            <div class="card-body">
+              <div class="card-title">
+                <strong>Event Coverage</strong>
+                <span class="tag">Client</span>
+              </div>
+              <p>Events / live moments</p>
+            </div>
+          </article>
 
-</section>
+          <article class="card reveal">
+            <div class="thumb"></div>
+            <div class="card-body">
+              <div class="card-title">
+                <strong>Poster Series</strong>
+                <span class="tag">Personal</span>
+              </div>
+              <p>Graphic design</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <footer class="footer">
+    <div class="container footer-row">
+      <span class="kicker">vinsaint studio</span>
+      <a href="work/index.html" data-go>Work</a>
+    </div>
+  </footer>
 
-<section id="portfolio" class="portfolio">
-
-<h2>Selected Work</h2>
-
-<div class="portfolio-grid">
-
-<div class="work-card">
-<img src="https://picsum.photos/600/700?1">
-</div>
-
-<div class="work-card">
-<img src="https://picsum.photos/600/700?2">
-</div>
-
-<div class="work-card">
-<img src="https://picsum.photos/600/700?3">
-</div>
-
-<div class="work-card">
-<img src="https://picsum.photos/600/700?4">
-</div>
-
-<div class="work-card">
-<img src="https://picsum.photos/600/700?5">
-</div>
-
-<div class="work-card">
-<img src="https://picsum.photos/600/700?6">
-</div>
-
-</div>
-
-</section>
-
-
-<script src="script.js"></script>
-
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
