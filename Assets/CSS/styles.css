@@ -1,43 +1,99 @@
-
 :root{
 
---bg-dark:#120A07;
---bg-brown:#2B140C;
+--bg-dark:#1A0702;
+--bg-brown:#3A1206;
+--bg-sunset:#5C1E08;
 
---accent:#FF5A00;
---accent2:#FF8A00;
+--accent:#FF6A1A;
+--accent2:#FF8F3A;
+--accent-soft:#FFB066;
 
---text:rgba(255,240,220,.92);
+--text:#FFE8D6;
+--muted:#E5BFA8;
 
 }
 
 *{
 box-sizing:border-box;
+margin:0;
+padding:0;
 }
 
 body{
 
-margin:0;
-height:100vh;
-
-display:flex;
-align-items:center;
-justify-content:center;
-
 background:
-radial-gradient(800px 500px at 50% -20%, rgba(255,120,40,.2), transparent 60%),
-linear-gradient(#120A07,#2B140C);
+radial-gradient(900px 600px at 50% -10%, rgba(255,130,50,.35), transparent 60%),
+radial-gradient(700px 500px at 80% 10%, rgba(255,90,20,.2), transparent 70%),
+linear-gradient(180deg,#1A0702,#3A1206,#5C1E08);
 
 color:var(--text);
 
 font-family:"Inter",sans-serif;
 
-overflow:hidden;
+min-height:100vh;
 
 }
 
+/* NAVIGATION */
+
+.nav{
+
+position:fixed;
+top:0;
+left:0;
+right:0;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:24px 40px;
+
+z-index:10;
+
+}
+
+.nav-left{
+
+font-family:"Playfair Display",serif;
+font-size:20px;
+
+}
+
+.nav-right{
+
+display:flex;
+gap:28px;
+
+}
+
+.nav-right a{
+
+text-decoration:none;
+color:var(--muted);
+font-size:14px;
+transition:.3s;
+
+}
+
+.nav-right a:hover{
+
+color:var(--accent-soft);
+
+}
+
+/* HERO */
+
 .hero{
+
+height:90vh;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
 text-align:center;
+
 }
 
 #title{
@@ -51,5 +107,83 @@ letter-spacing:-2px;
 cursor:pointer;
 
 transition:transform .25s ease;
+
+text-shadow:
+0 0 20px rgba(255,140,60,.25),
+0 0 60px rgba(255,120,40,.15);
+
+}
+
+/* PORTFOLIO */
+
+.portfolio{
+
+padding:120px 10%;
+
+}
+
+.portfolio h2{
+
+font-family:"Playfair Display",serif;
+font-size:42px;
+
+margin-bottom:60px;
+
+}
+
+.portfolio-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:40px;
+
+}
+
+.work-card{
+
+overflow:hidden;
+
+border-radius:10px;
+
+}
+
+.work-card img{
+
+width:100%;
+display:block;
+
+transition:transform .6s;
+
+}
+
+.work-card:hover img{
+
+transform:scale(1.06);
+
+}
+
+/* SMALL SCREEN */
+
+@media (max-width:768px){
+
+#title{
+
+font-size:64px;
+
+}
+
+.nav{
+
+padding:20px;
+
+}
+
+.portfolio{
+
+padding:80px 20px;
+
+}
 
 }
