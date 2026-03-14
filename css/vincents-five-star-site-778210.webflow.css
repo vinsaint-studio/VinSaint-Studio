@@ -2746,36 +2746,3 @@ blockquote {
   font-style: normal;
   font-display: swap;
 }
-
-/* VinSaint Sunset Palette Override */
-:root{
---vs-bg-dark:#1A0702;
---vs-bg-brown:#3A1206;
---vs-bg-sunset:#5C1E08;
---vs-accent:#FF6A1A;
---vs-accent2:#FF8F3A;
---vs-text:#FFE8D6;
---vs-muted:#E5BFA8;
-}
-
-body{
-background:
-radial-gradient(900px 600px at 50% -10%, rgba(255,130,50,.35), transparent 60%),
-radial-gradient(700px 500px at 80% 10%, rgba(255,90,20,.2), transparent 70%),
-linear-gradient(180deg,var(--vs-bg-dark),var(--vs-bg-brown),var(--vs-bg-sunset)) !important;
-color:var(--vs-text);
-}
-
-a, .link, .w-nav-link{
-color:var(--vs-accent) !important;
-}
-
-.w-button, button{
-background-color:var(--vs-accent) !important;
-color:#fff !important;
-border-color:var(--vs-accent2) !important;
-}
-
-.w-button:hover, button:hover{
-background-color:var(--vs-accent2) !important;
-}
